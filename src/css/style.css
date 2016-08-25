@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 0; }
+
+.ui.action.input:not([class*="left action"]) > .button:not(:first-child), .ui.action.input:not([class*="left action"]) > .buttons:not(:first-child) > .button, .ui.action.input:not([class*="left action"]) > .dropdown:not(:first-child) {
+  border-radius: 0;
+  padding: .5rem; }
+
+.ui.action.input {
+  width: calc(100% - 0rem);
+  top: 0;
+  padding: 1rem;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(236, 232, 232, 0.93);
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.19); }
+
+.todo-list {
+  margin-top: 6rem; }
+
+.todo {
+  background-color: #f1f1f1;
+  position: relative;
+  margin: 1rem;
+  border-radius: 5px;
+  padding: .6rem;
+  border: 1px solid #eee;
+  transition: background-color 1s ease; }
+  .todo.important {
+    background-color: #f7dde5; }
+  .todo.default {
+    background-color: #f1f1f1; }
+  .todo.slight {
+    background-color: #ddf7ec; }
+  .todo .title {
+    color: #404040;
+    font-weight: 800;
+    text-decoration: underline;
+    overflow: hidden;
+    word-wrap: break-word; }
+  .todo .ui.buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: .67rem; }
+  .todo select {
+    padding: .5rem !important; }
